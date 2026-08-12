@@ -21,7 +21,7 @@
       <header class="site-header">
         <div class="container nav-wrap">
           <a href="#top" class="brand" aria-label="Hannah J. Skelly home">
-            <span class="brand__mark">HJS</span>
+            <span class="brand__mark"><img src="./images/profile.png" alt="Hannah J. Skelly" class="brand__mark__img" /></span>
             <span class="brand__text">Hannah J. Skelly, MA</span>
           </a>
 
@@ -33,6 +33,14 @@
             <a href="./basic-resume.html">Resume</a>
             <a href="#contact">Contact</a>
           </nav>
+
+          <!-- Site search -->
+          <form id="site-search-form" class="site-search" role="search">
+            <label for="site-search-input" class="sr-only">Search site</label>
+            <input id="site-search-input" type="search" placeholder="Search site..." aria-label="Search site" autocomplete="off" />
+            <button id="site-search-button" type="submit" aria-label="Search">🔍</button>
+            <div id="site-search-results" class="site-search__results" aria-hidden="true"></div>
+          </form>
 
           <a class="btn btn--ghost" href="mailto:hskelly@fhi360.org">Email Me</a>
         </div>
@@ -74,7 +82,9 @@
                   <span>Available for consulting</span>
                 </div>
 
-                <div class="profile-card__avatar" aria-hidden="true">HJS</div>
+                <div class="profile-card__avatar">
+                  <img src="./images/profile.png" alt="Hannah J. Skelly" class="avatar-img" />
+                </div>
 
                 <div class="profile-card__name">
                   <p class="kicker">Portfolio</p>
